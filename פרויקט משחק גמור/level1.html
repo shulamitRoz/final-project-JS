@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sliding Puzzle Game</title>
+
+    <link rel="stylesheet" href="level.css">
+</head>
+
+<body>
+    <!-- /*כאשר השחקן מנצח  -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <h2>winner</h2>
+            </div>
+            <div class="modal-footer">
+                <button onclick="location.reload();">new game</button>
+              
+            </div>
+        </div>
+    </div>
+    
+    <div id="board"></div>
+    <div id="game-over"></div>
+    <div id="time">Time Remaining: <span id="timer"></span></div>
+    <div id="moves">Moves: <span id="move-count">0</span></div>
+    <div id ="puzzle-solved"></div>
+    <button id="restart-button">Restart Game</button>
+    <a href="home.html"> <button id="back"> back home</button></a>
+    
+    <h1>level 1</h1>
+    <audio id="winBip" controls="controls" hidden="hidden">
+        <source src="סאונד זיקוקים.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="losBip" controls="controls" hidden="hidden">
+        <source src="צליל הפסד.wav" type="audio/mpeg" />
+    </audio>
+    <script src="level.js"></script>
+</body>
+
+</html>
